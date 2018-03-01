@@ -19,8 +19,7 @@ public class EmployeeDao {
 			Integer id = (Integer) session.save(employee);
 			System.out.println("Employee is createdWith Id:"+id);
 			session.getTransaction().commit();
-			
-			
+
 		}
 		catch(Exception e) {
 			e.printStackTrace();
